@@ -13,3 +13,5 @@ node_modules/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+config/remember_secret.php
