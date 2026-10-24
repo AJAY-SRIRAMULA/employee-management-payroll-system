@@ -15,3 +15,5 @@ node_modules/
 Thumbs.db
 
 config/remember_secret.php
+
+/config/db_hosting.php

@@ -2,6 +2,17 @@
 
 A web-based application built with PHP and MySQL to manage employee information and payroll operations.
 
+## Live Demo
+
+**Live Website:** [Employee Management & Payroll System](https://ajaypayrollsystem.great-site.net/auth/login.php)
+## Demo Login
+
+- **Live Demo:** [Open Employee Management & Payroll System](https://ajaypayrollsystem.great-site.net/auth/login.php)
+- **Username/Email:** `admin`
+- **Password:** `admin123`
+
+> **Note:** These credentials should belong to a dedicated demo account and must not provide access to real employee data or sensitive administrative functions.
+
 ## Features
 
 - **Dashboard** — View the system overview.
@@ -11,7 +22,7 @@ A web-based application built with PHP and MySQL to manage employee information 
 - **Leave Management** — Manage employee leave requests.
 - **Payroll Management** — Manage payroll records and salary slips.
 - **Reports** — View reports and export relevant data.
-- **Authentication** — Login to access the system.
+- **Authentication** — Secure login to access the system.
 
 ## Tech Stack
 
@@ -36,25 +47,12 @@ A web-based application built with PHP and MySQL to manage employee information 
 
 - Database credentials are excluded from Git using `.gitignore`.
 - Configure your own database credentials locally.
-- Do not commit passwords, database exports containing real data, or other secrets.
-
-## Live Demo
-
-[Employee Management & Payroll System](https://ajaypayrollsystem.infinityfreeapp.com/)
-
-**Note:** The live demo may be temporarily unavailable while its browser security warning is being reviewed.
+- Never commit passwords, secret keys, or database exports containing real employee data.
+- Use a dedicated demo account for public demonstrations. Do not publish real administrator credentials.
 
 ## Author
 
 **Ajay Sriramula**
 
 - GitHub: [AJAY-SRIRAMULA](https://github.com/AJAY-SRIRAMULA)
-## Demo Login
 
-Use the following demo credentials to explore the application:
-
-- **Live Demo:** https://ajaypayrollsystem.infinityfreeapp.com/
-- **Username/Email:admin
-- **Password:admin123
-
-> **Note:** Replace the placeholders with the credentials for a dedicated demo account. Do not publish real administrator credentials or sensitive employee data.
