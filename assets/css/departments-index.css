@@ -1,0 +1,10 @@
+/* Department list — table header and action column alignment */
+.container { border-top: 4px solid var(--accent); }
+.table-card { border-top: 1px solid var(--line); }
+.table-heading { align-items: center; }
+.table-heading p { margin: 0; }
+.department-name { min-width: 180px; font-weight: 750; color: var(--ink); }
+.id-cell { color: #94a3b8; font-variant-numeric: tabular-nums; }
+.action-cell { min-width: 150px; white-space: nowrap; }
+.delete-form { display: inline-flex; }
+.page-footer { padding-top: 16px; border-top: 1px solid var(--line); }

@@ -1,0 +1,10 @@
+/* Leave request form — deliberate single-column flow for ungrouped label/field markup */
+body > h1 { width: min(760px, 100%); margin: 0 auto 22px; padding-bottom: 17px; border-bottom: 1px solid var(--line); }
+body > form:not(.inline-action-form):not(.action-form):not(.delete-form) { display: block; width: min(760px, 100%); border-top: 4px solid var(--teal); }
+body > form > label { margin-top: 3px; }
+body > form > select, body > form > input, body > form > textarea { display: block; margin-bottom: 18px; }
+body > form > textarea { min-height: 125px; }
+body > form > button { min-width: 190px; margin-top: 7px; }
+body > form > a { display: inline-flex; align-items: center; margin: 8px 0 0 12px; padding: 10px 4px; color: var(--muted); font-weight: 700; }
+body > form > a:hover { color: var(--accent); }
+@media(max-width: 600px) { body > form > button { width: 100%; } body > form > a { margin-left: 0; } }

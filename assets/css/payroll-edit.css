@@ -1,0 +1,10 @@
+/* Payroll adjustment — separates employee context from editable amounts */
+.container { max-width: 980px; border-top: 4px solid var(--accent); }
+.container > h1 { margin-bottom: 20px; }
+.employee { margin: 0 0 24px; padding: 17px 20px; border: 1px solid #c7d2fe; border-left: 4px solid var(--accent); border-radius: 11px; background: #f5f7ff; color: #334155; }
+.container > form { display: grid; grid-template-columns: minmax(165px, .55fr) minmax(0, 1fr); align-items: center; column-gap: 22px; row-gap: 12px; }
+.container > form > label { margin: 0; }
+.container > form > .form-group { margin-bottom: 19px; }
+.container > form > .buttons, .container > form > button { grid-column: 1 / -1; justify-self: start; }
+.container > form > .buttons > * { min-width: 155px; }
+@media(max-width: 640px) { .container > form { grid-template-columns: 1fr; row-gap: 4px; } .container > form > label { margin-top: 8px; } .container > form > .buttons, .container > form > button { grid-column: auto; } .container > form > .buttons > * { width: 100%; } }

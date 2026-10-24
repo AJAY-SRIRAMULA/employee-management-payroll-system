@@ -1,0 +1,10 @@
+/* Employee directory — readable names, compact status, aligned actions */
+.container { border-top: 4px solid var(--teal); }
+.container > h1 { margin-bottom: 18px; }
+.container > .add-button { margin: 0 0 22px; }
+.container > table { width: 100%; min-width: 0; max-width: 100%; overflow-x: auto; }
+.container > table thead, .container > table tbody { display: table; width: max(100%, 1120px); table-layout: auto; }
+.container > table tbody td:nth-child(3) { min-width: 170px; font-weight: 750; color: var(--ink); }
+.container > table tbody td:nth-child(4) { min-width: 190px; }
+.container > table tbody td:last-child { min-width: 155px; }
+.container > table tbody td:last-child a { margin: 2px; }

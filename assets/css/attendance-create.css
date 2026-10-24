@@ -1,0 +1,10 @@
+/* Attendance form — structured two-column entry layout */
+.container { max-width: 900px; border-top: 4px solid var(--teal); }
+.container > h1 { margin-bottom: 24px; }
+.container > form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 22px; row-gap: 0; }
+.container > form .form-group { margin-bottom: 18px; }
+.container > form .form-group:last-of-type { grid-column: 1 / -1; }
+.container > form > button, .container > form > .buttons, .container > form > .form-actions { grid-column: 1 / -1; justify-self: start; }
+.container > form > button { min-width: 170px; margin-top: 4px; }
+.container > a.back-link { display: inline-flex; margin-top: 22px; }
+@media(max-width: 620px) { .container > form { grid-template-columns: 1fr; } .container > form .form-group:last-of-type { grid-column: auto; } .container > form > button { width: 100%; } }

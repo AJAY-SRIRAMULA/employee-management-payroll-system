@@ -1,0 +1,17 @@
+/* Salary slip — clean printable document */
+body { background: #eef2f7; }
+.salary-slip { width: min(850px, 100%); margin: 0 auto; padding: clamp(24px, 4vw, 44px); border: 1px solid var(--line); border-radius: 16px; background: var(--surface); box-shadow: var(--shadow); }
+.salary-slip .header { padding-bottom: 24px; margin-bottom: 26px; border-bottom: 2px solid var(--teal); text-align: center; }
+.salary-slip .header h1 { margin-bottom: 8px; }
+.salary-slip .header p { margin: 0; }
+.salary-slip .employee-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 22px; margin-bottom: 25px; color: #475569; }
+.salary-slip .employee-details p { margin: 0; }
+.salary-slip table { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.salary-slip tbody td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+.salary-slip .net-salary { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-top: 24px; padding: 20px; border: 1px solid #a7f3d0; border-radius: 12px; background: #ecfdf5; color: #065f46; }
+.salary-slip .net-salary strong, .salary-slip .net-salary span { color: inherit; font-size: clamp(17px, 2vw, 22px); font-weight: 850; }
+.salary-slip .actions { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+.salary-slip .actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 40px; padding: 10px 15px; border: 1px solid var(--line); border-radius: 9px; background: #fff; color: #334155; font-weight: 750; }
+.salary-slip .actions a:hover { background: #eef2ff; color: var(--accent); }
+@media(max-width: 560px) { .salary-slip { padding: 20px 14px; } .salary-slip .employee-details { grid-template-columns: 1fr; } .salary-slip .net-salary { align-items: flex-start; flex-direction: column; } .salary-slip .actions > * { flex: 1 1 100%; } }
+@media print { @page { size: A4; margin: 14mm; } body { padding: 0; background: #fff; } body::before { display: none; } .salary-slip { width: 100%; max-width: none; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; } .salary-slip .actions { display: none; } .salary-slip table { break-inside: avoid; } }

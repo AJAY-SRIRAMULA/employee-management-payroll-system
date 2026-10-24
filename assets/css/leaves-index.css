@@ -1,0 +1,12 @@
+/* Leave register — compact approvals and clear request statuses */
+body > h1 { padding-bottom: 17px; border-bottom: 1px solid var(--line); }
+body > a[href="create.php"] { display: inline-flex; align-items: center; min-height: 40px; padding: 10px 15px; margin: 0 0 20px; border-radius: 9px; background: var(--accent); color: white; font-weight: 750; }
+body > a[href="create.php"]:hover { background: var(--accent-hover); color: white; }
+body > table { width: 100%; min-width: 0; max-width: 100%; overflow-x: auto; margin: 0 auto; }
+body > table thead, body > table tbody { display: table; width: max(100%, 1180px); table-layout: auto; }
+body > table tbody td:last-child { min-width: 205px; }
+.action-form { max-width: 100%; }
+.approve-button { background: #047857; }
+.approve-button:hover { background: #065f46; }
+.reject-button { border: 1px solid #fecdd3; background: #fff1f2; color: #be123c; }
+.reject-button:hover { background: #be123c; color: white; }

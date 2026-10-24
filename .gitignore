@@ -1,0 +1,15 @@
+
+# Database credentials
+config/db.php
+
+# Environment secrets
+.env
+.env.*
+
+# Dependencies and generated files
+vendor/
+node_modules/
+
+# Operating system files
+.DS_Store
+Thumbs.db

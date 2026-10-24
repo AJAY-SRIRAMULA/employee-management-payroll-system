@@ -1,0 +1,8 @@
+/* Employee creation — clear two-column form on desktop */
+.container { max-width: 1000px; border-top: 4px solid var(--teal); }
+.container > h1 { margin-bottom: 26px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.container > form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 22px; }
+.container > form .form-group { margin-bottom: 18px; }
+.container > form > .submit-button { justify-self: start; min-width: 165px; margin-top: 4px; }
+.container > .back-link { display: inline-flex; margin-top: 20px; }
+@media(max-width: 640px) { .container > form { grid-template-columns: 1fr; } .container > form > .submit-button { width: 100%; } }

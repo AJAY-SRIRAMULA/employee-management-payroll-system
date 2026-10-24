@@ -1,0 +1,9 @@
+/* Employee editing — consistent with the new-employee workflow */
+.container { max-width: 1000px; border-top: 4px solid var(--teal); }
+.container > h1 { margin-bottom: 8px; }
+.container > .subtitle { margin-bottom: 22px; }
+.container > form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 22px; margin-top: 20px; }
+.container > form .form-group { margin-bottom: 18px; }
+.container > form .buttons { grid-column: 1 / -1; margin-top: 4px; }
+.container > form .buttons .btn { min-width: 155px; }
+@media(max-width: 640px) { .container > form { grid-template-columns: 1fr; } .container > form .buttons { grid-column: auto; } .container > form .buttons > * { width: 100%; } }
